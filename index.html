@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <img src="./assets/images/logo.svg" alt="Logo" />
+        <button class="theme-toggle"><img src="./assets/images/icon-moon.svg" alt="" /></button>
+      </div>
+      <div class="extension-place">
+        <div class="extension-header">
+          <h2>Extensions List</h2>
+          <div class="button-list">
+            <button onclick="setState('all')" id="all-btn">All</button>
+            <button onclick="setState('active')" id="active-btn">Active</button>
+            <button onclick="setState('inactive')" id="inactive-btn">Inactive</button>
+          </div>
+        </div>
+        <div class="extensions" id="extensions">
+          <!-- Extensions will be dynamically inserted here -->
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/WebDeveloperJabir" target="_blank">Jabir Ibne Habib</a>.
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

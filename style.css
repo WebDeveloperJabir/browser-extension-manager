@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ebf3fb;
+  font-family: "NotoSans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("./assets/fonts/static/NotoSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSans Medium";
+  src: url("./assets/fonts/static/NotoSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSans Bold";
+  src: url("./assets/fonts/static/NotoSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSans Italic";
+  src: url("./assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+main {
+  max-width: 970px;
+  margin-top: 16px;
+  margin: 16px;
+}
+.header {
+  background-color: #fafcff;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+.theme-toggle {
+  cursor: pointer;
+  padding: 8px 15px 8px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  background-color: #e6e6e6;
+}
+.theme-toggle img {
+  display: block;
+  width: 25px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.extensions {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  margin-top: 30px;
+  grid-auto-flow: dense;
+}
+.extension-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+.extension-header h2 {
+  font-size: 28px;
+  margin: 0;
+}
+.extension-header button {
+  margin: 0;
+  padding: 7px 17px 7px 17px;
+  border-radius: 20px;
+  border: 1px solid #dddddd;
+  background-color: #fafcff;
+  font-size: 16px;
+}
+.extension-header button.active-state {
+  border: 1px solid #c7221a;
+  background-color: #c7221a;
+}
+.extension {
+  background-color: #fafcff;
+  padding: 17px;
+  border-radius: 20px;
+  border: 1px solid #d6e2f5;
+}
+.extension-top-place {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.extension-top-place h3 {
+  margin-bottom: 7px;
+}
+.extension-top-place p {
+  font-size: 12px;
+}
